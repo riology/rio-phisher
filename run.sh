@@ -1,3 +1,4 @@
 #!/bin/bash
-echo "🐟 Starting PhishingKit..."
-python3 server.py
+echo "🐟 rio-phisher Linux/Termux"
+python3 installer.py
+python3 run.py
